@@ -8,8 +8,8 @@ block content
 				.alert.alert-danger(role='alert') reCaptcha không thành công. Vui lòng thử lại.
 			if userExists
 				.alert.alert-danger(role='alert') 
-					| Một người dùng với tên giống như bạn đã đăng kí trước đó. 
-					| Là bạn? bấm vào 
+					| Tên đăng nhập đã tồn tại. 
+					| Nếu là bạn bấm vào 
 					a(href='/login') đây
 					|  để đăng nhập.
 			.form-group
@@ -20,7 +20,7 @@ block content
 				input.form-control(type='password' name='password' placeholder='Mật khẩu' required)
 			.form-group
 				label(for='name') Tên hiển thị
-				input.form-control(type='text' name='name' placeholder='Trần Văn A' required)
+				input.form-control(type='text' name='name' placeholder='Tên hiển thị' required)
 			div(style='margin-bottom: 5px')!=recaptcha
 			.text-center
 				input.btn.btn-success(type='submit' value='Đăng kí')
